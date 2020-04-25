@@ -1,5 +1,4 @@
 <?php
-    // Include config file
     require_once "config.php";
 ?>
 <!DOCTYPE html>
@@ -9,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <title>Welcome to FiLo</title>
@@ -18,9 +17,10 @@
     .card{
         padding: 15px 12px;
         border-radius: 10px;
+        background: #f8f8f8;
     }
     .card:hover{
-        box-shadow: 3px 3px 12px #bbbbbb9f;
+        box-shadow: 3px 3px 15px #99999f;
     }
     span{
         text-align: center;
@@ -35,11 +35,14 @@
         margin-top: -20px;
         color: #fff;
     }
+    body{
+        background: #eee;
+    }
 </style>
 <body>
     <?php require "partial/_header.php" ?>
 
-    <h2 class="jumbotron" style="text-align: center;">Have you lost something? Find you precious thing here...</h2>
+    <h2 class="jumbotron" style="text-align: center;">Have you lost something? Find your precious thing here...</h2>
 
     <div class="container">
         <div class="row">
@@ -77,7 +80,6 @@
     <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
-        <!-- Modal content-->
         <div class="modal-content">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
